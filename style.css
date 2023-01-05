@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --light-white: #8f8ec1;
+    --dark: #1d1d1d;
+}
+
+html, body {
+    margin: 0;
+}
+
+.iphone-container {
+    width: 250px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 30px;
+    background-color: var(--dark);
+    position: relative;
+}
+
+.iphone-container .iphone-top {
+    width: 135px;
+    height: 20px;
+    border-radius: 0 0 20px 20px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+.iphone-container .iphone-menu {
+    width: 80px;
+    height: 2px;
+    border-radius: 30px;
+    background-color: var(--light-white);
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 40px);
+}
