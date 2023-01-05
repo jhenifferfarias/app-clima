@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,12 +13,48 @@ body {
 }
 
 :root {
-    --light-white: #8f8ec1;
+    --light-white: #d1d1d8;
     --dark: #1d1d1d;
 }
 
 html, body {
     margin: 0;
+}
+
+.iphone-container h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.iphone-container h2, .iphone-container h3 {
+    margin: 0px;
+}
+
+.iphone-container h4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.iphone-container span {
+    font-weight: 200;
+}
+
+.iphone-container svg {
+    width: 70px;
+    height: 70px;
+    margin: 40px 0 0;
+}
+
+.iphone-container .iphone-weather {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    text-align: left;
+    padding: 0 20px;
+    color: var(--light-white);
+    margin-top: 30px;
+    grid-gap: 10px;
 }
 
 .iphone-container {
@@ -28,14 +64,19 @@ html, body {
     border-radius: 30px;
     background-color: var(--dark);
     position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px 5px 20px 5px;
 }
 
 .iphone-container .iphone-top {
-    width: 135px;
+    width: 140px;
     height: 20px;
     border-radius: 0 0 20px 20px;
     background-color: black;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 70px);
 }
 
 
